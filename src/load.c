@@ -1006,7 +1006,7 @@ json_t *json_loadfd(int input, size_t flags, json_error_t *error) {
     json_t *result;
 
 #ifdef HAVE_UNISTD_H
-    if (input == STDIN_FILENO)
+    if (input == 0)
         source = "<stdin>";
     else
 #endif

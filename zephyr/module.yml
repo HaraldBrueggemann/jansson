@@ -1,0 +1,5 @@
+name: jansson
+
+build:
+  cmake: zephyr
+  kconfig: zephyr/Kconfig

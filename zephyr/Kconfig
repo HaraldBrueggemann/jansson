@@ -1,0 +1,4 @@
+config LIB_JANSSON
+    bool "Include Jansson JSON C++ library"
+    default n
+    depends on CPP && STD_CPP17 && REQUIRES_FULL_LIBCPP
